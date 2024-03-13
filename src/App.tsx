@@ -29,7 +29,6 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
       <p style={{color: "red"}}>My first test</p>
-      <p>Zeite Änderung</p>
     </>
   )
 }
