@@ -1,3 +1,5 @@
+/* -------------------- Base -------------------- */
+
 :root {
   --container-width: 1024px;
   --fluid-area: calc(50vw - var(--container-width) / 2);
@@ -29,10 +31,50 @@
   }
 }
 
-.main {
-  grid-column: c1/c7;
+/* -------------------- Header -------------------- */
+
+.header {
+  top: 0;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  padding: 20px 10px;
 }
 
-.sidebar {
-  grid-column: c9/c12;
+.header li {
+  float: left;
+  line-height: 24px;
+  padding: 12px;
+  list-style-type: none;
+}
+
+.header a {
+  color: black;
+  text-decoration: none;
+}
+
+.header a.active {
+  color: #BADC00;
+}
+
+.header ul {
+  margin: 0px;
+}
+
+/* -------------------- Content -------------------- */
+
+.content {
+  margin-top: 88px;
+  margin-bottom: 36px;
+}
+
+/* -------------------- Footer -------------------- */
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  padding: 12px;
+  background-color: black;
+  width: 100%;
+  color: white;
 }

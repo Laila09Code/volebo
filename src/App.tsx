@@ -1,5 +1,5 @@
-import { Link, Routes, Route, Outlet } from 'react-router-dom'
-import './App.css'
+import { NavLink, Outlet, Route, Routes } from 'react-router-dom';
+import './App.css';
 import Home from './components/sites/home/Home';
 import Mixed from './components/sites/mixed/Mixed';
 
@@ -32,23 +32,28 @@ function Layout() {
     <div>
       {/* A "layout route" is a good place to put markup you want to
           share across all the pages on your site, like navigation. */}
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/mixed">Mixed</Link>
-          </li>
-        </ul>
-      </nav>
-
-      <hr />
+      <div className="header">
+        <nav>
+          <ul>
+            <li>
+              <NavLink to="/">Home</NavLink>
+            </li>
+            <li>
+              <NavLink to="/mixed">Mixed</NavLink>
+            </li>
+          </ul>
+        </nav>
+      </div>
 
       {/* An <Outlet> renders whatever child route is currently active,
           so you can think about this <Outlet> as a placeholder for
           the child routes we defined above. */}
-      <Outlet />
+      <div className="content">
+        <Outlet />
+      </div>
+      <footer>
+        <div className="footer">© 2024 VBC Volebo - 5610 Wohlen | info@volebo.ch | Impressum | Datenschutzerklärung | JAMOS</div>
+      </footer>
     </div>
   );
 }

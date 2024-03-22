@@ -1,0 +1,19 @@
+.main {
+    grid-column: c1/c6;
+}
+
+.sidebar {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    grid-column: c1/c6;
+}
+
+@media (min-width: 768px) {
+    .main {
+        grid-column: c1/c8;
+    }
+
+    .sidebar {
+        grid-column: c9/c12;
+    }
+}
