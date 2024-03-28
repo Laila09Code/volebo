@@ -36,6 +36,11 @@ function Layout() {
         <nav>
           <ul>
             <li>
+              <NavLink to="/">
+                <img src="src/assets/volebo.png" alt="Volebo Logo" className="logo"></img>
+              </NavLink>
+            </li>
+            <li>
               <NavLink to="/">Home</NavLink>
             </li>
             <li>
@@ -52,7 +57,7 @@ function Layout() {
         <Outlet />
       </div>
       <footer>
-        <div className="footer">© 2024 VBC Volebo - 5610 Wohlen | info@volebo.ch | Impressum | Datenschutzerklärung | JAMOS</div>
+        <div className="footer">© 2024 VBC Volebo - 5610 Wohlen | <a href="mailto:info@volebo.ch">info@volebo.ch</a> | Impressum | Datenschutzerklärung | <a href="https://www.jamos.ch/" className="laila">Jamos</a></div>
       </footer>
     </div>
   );
