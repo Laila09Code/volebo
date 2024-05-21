@@ -5,15 +5,15 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 // Import Swiper styles
 import 'swiper/css';
-import './Mixed.css';
 import { CiMail } from "react-icons/ci";
 import { RiExternalLinkLine } from "react-icons/ri";
+import './u23herren1.css';
 
-function Mixed() {
+function U23Herren1(props: any) {
     return (
         <div className="grid">
             <div className="main">
-                <h1>Mixed</h1>
+                <h1>Herren 1</h1>
                 <Swiper
                     spaceBetween={50}
                     slidesPerView={1}
@@ -42,7 +42,7 @@ function Mixed() {
                     </div>
                 </SidebarElement>
                 <SidebarElement title="Coach">
-                <p>Douglas Chechele</p>
+                <p>Alessandro Damore</p>
                 <div>
                     <CiMail className="icon"/> <a href="mailto:info@volebo.ch">info@volebo.ch</a>
                 </div>
@@ -52,4 +52,4 @@ function Mixed() {
     )
 }
 
-export default Mixed
+export default U23Herren1;

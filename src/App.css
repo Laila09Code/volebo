@@ -52,11 +52,11 @@
 .header a {
   color: black;
   text-decoration: none;
+  display: flex;
 }
 
 .header a.active {
   color: #BADC00;
-  display: flex;
 }
 
 .header ul {

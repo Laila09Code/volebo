@@ -1,0 +1,38 @@
+.main {
+    margin-top: 24px;
+    margin-bottom: 30px;
+    grid-column: c1/c6;
+    background-color: white;
+    padding: 24px;
+    border-radius: 10px;
+}
+
+.sidebar {
+    margin-top: 24px;
+    margin-bottom: 12px;
+    grid-column: c1/c6;
+}
+
+.test {
+    max-width: 100%;
+    height: auto;
+}
+
+.icon {
+    vertical-align: middle;
+}
+
+.laila {
+    margin-left: 6px;
+    vertical-align: middle;
+}
+
+@media (min-width: 768px) {
+    .main {
+        grid-column: c1/c8;
+    }
+
+    .sidebar {
+        grid-column: c9/c12;
+    }
+}

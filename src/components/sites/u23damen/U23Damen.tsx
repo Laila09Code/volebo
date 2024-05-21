@@ -5,15 +5,15 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 // Import Swiper styles
 import 'swiper/css';
-import './Mixed.css';
 import { CiMail } from "react-icons/ci";
 import { RiExternalLinkLine } from "react-icons/ri";
+import './U23Damen.css';
 
-function Mixed() {
+function U23Damen(props: any) {
     return (
         <div className="grid">
             <div className="main">
-                <h1>Mixed</h1>
+                <h1>Damen U23</h1>
                 <Swiper
                     spaceBetween={50}
                     slidesPerView={1}
@@ -27,10 +27,10 @@ function Mixed() {
                     autoplay={true}
                 >
                     <SwiperSlide data-swiper-autoplay="5000">
-                        <img src="src/assets/Mixed/mixed1.jpeg" className="test"></img>
+                        <img src="src/assets/Mixed/Damen1.jpeg" className="test"></img>
                     </SwiperSlide>
                     <SwiperSlide data-swiper-autoplay="5000">
-                        <img src="src/assets/Mixed/mixed2.jpeg" className="test"></img>
+                        <img src="src/assets/Mixed/Damen2.jpeg" className="test"></img>
                     </SwiperSlide>
                 </Swiper>
             </div>
@@ -42,7 +42,7 @@ function Mixed() {
                     </div>
                 </SidebarElement>
                 <SidebarElement title="Coach">
-                <p>Douglas Chechele</p>
+                <p>Alessandro Damore</p>
                 <div>
                     <CiMail className="icon"/> <a href="mailto:info@volebo.ch">info@volebo.ch</a>
                 </div>
@@ -52,4 +52,4 @@ function Mixed() {
     )
 }
 
-export default Mixed
+export default U23Damen;

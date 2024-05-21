@@ -2,6 +2,11 @@ import { NavLink, Outlet, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Home from './components/sites/home/Home';
 import Mixed from './components/sites/mixed/Mixed';
+import U23Damen from './components/sites/u23damen/U23Damen';
+import U23Herren2 from './components/sites/u23herren2/U23Herren2';
+import U23Herren1 from './components/sites/u23herren1/u23herren1';
+import Herren5 from  './components/sites/herren5/Herren5';
+
 
 export default function App() {
 
@@ -15,6 +20,11 @@ export default function App() {
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
             <Route path="mixed" element={<Mixed />} />
+            <Route path="u23damen" element={<U23Damen />} />
+            <Route path="u23herren2" element={<U23Herren2 />} />
+            <Route path="u23herren1" element={<U23Herren1 />} />
+            <Route path="herren5" element={<Herren5 />} />
+
 
             {/* Using path="*"" means "match anything", so this route
                 acts like a catch-all for URLs that we don't have explicit
@@ -46,6 +56,18 @@ function Layout() {
             <li>
               <NavLink to="/mixed">Mixed</NavLink>
             </li>
+            <li>
+              <NavLink to="/u23damen">U23 Damen</NavLink>
+            </li>
+            <li>
+              <NavLink to="/u23herren1">U23 Herren 1</NavLink>
+            </li>
+            <li>
+              <NavLink to="/u23herren2">U23 Herren 2</NavLink>
+            </li>
+            <li>
+              <NavLink to="/herren5">Herren 5</NavLink>
+          </li>
           </ul>
         </nav>
       </div>
